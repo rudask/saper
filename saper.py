@@ -101,7 +101,7 @@ class Saper(QtGui.QWidget):
             self.buttons[(i)*ncol+j].customContextMenuRequested.connect(call_func2(self.buttonClicked,position,ncol,nrow))
             self.grid.addWidget(self.buttons[(i)*self.ncol+j],i+1,j+1)
     def helpTrigger(self):
-        super(Example, self).__init__()
+        super(Saper, self).__init__()
         self.grid = QtGui.QGridLayout()
         self.setLayout(self.grid)
         self.helps1 = QtGui.QLabel('Klasyczny saper')
